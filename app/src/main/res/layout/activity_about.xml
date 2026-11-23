@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg"
+    android:layoutDirection="rtl"
+    android:fillViewport="true"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:padding="24dp">
+
+        <!-- Header -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="درباره سازنده"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="28dp"/>
+
+        <!-- Developer Avatar -->
+
+        <ImageView
+            android:id="@+id/imgDeveloper"
+            android:layout_width="240dp"
+            android:layout_height="200dp"
+            android:src="@drawable/developer_photo"
+            android:scaleType="centerCrop"
+            android:contentDescription="عکس سازنده برنامه"/>
+
+
+        <!-- Developer Name -->
+        <TextView
+            android:id="@+id/tvDeveloperName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="محمد موسی مهدیار"
+            android:textSize="26sp"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:gravity="center"
+            android:layout_marginTop="18dp"/>
+
+        <!-- About Developer -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/dashboard_card_bg"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="درباره من"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="سلام! من محمد موسی مهدیار یک توسعه دهنده علاقه مند به تکنولوژی و برنامه نویسی هستم. این اپلکشن را به هدف مدیریت آسان درآمد و مصارف شخصی، ثبت تراکنش ها و کنترل بهتر وضعیت مالی طراحی کردم. هدفم ساخت ابزار ساده، کاربردی و هوشمند برای آسان تر ساختن زنده گی روزمره است.  "
+                android:textSize="15sp"
+                android:lineSpacingExtra="6dp"
+                android:textColor="@color/text_secondary"
+                android:layout_marginTop="12dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ایمل: mahdyarmohammadmosa@gmail.com"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"/>
+
+        </LinearLayout>
+
+        <!-- App Information -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:background="@drawable/dashboard_card_bg"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="درباره اپلیکیشن"
+                android:textSize="19sp"
+                android:textStyle="bold"
+                android:textColor="@color/primary"
+                android:layout_marginBottom="15dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نام برنامه: حسابک"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="نسخه: 1.0"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="زبان برنامه‌نویسی: Java"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="پایگاه داده: SQLite"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="محیط توسعه: Android Studio"
+                android:textSize="15sp"
+                android:textColor="@color/text_primary"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <!-- Footer -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Developed by Mohammad Mosa Mahdyar | Hesabak © 2026"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:gravity="center"
+            android:layout_marginTop="32dp"
+            android:layout_marginBottom="20dp"/>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="15dp"
+    android:layout_marginBottom="10dp"
+    android:layoutDirection="rtl"
+    android:background="@drawable/dashboard_card_bg">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvItemTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="عنوان تراکنش"
+            android:textColor="@color/text_primary"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvItemCategory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="خوراک"
+            android:textColor="@color/text_secondary"
+            android:textSize="12sp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:id="@+id/tvItemDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2026-11-22"
+            android:textSize="12sp"
+            android:textColor="@color/text_secondary"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/tvItemAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+ 1000 AFN"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/income"/>
+
+        <Button
+            android:id="@+id/btnEditTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="ویرایش"
+            android:textSize="12sp"
+            android:textColor="@color/primary"
+            android:backgroundTint="@color/surface_alt"
+            android:layout_marginTop="8dp"/>
+
+
+        <Button
+            android:id="@+id/btnDeleteTransaction"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="حذف"
+            android:textSize="12sp"
+            android:textColor="@color/expense"
+            android:backgroundTint="@color/surface_alt"
+            android:layout_marginTop="8dp"/>
+    </LinearLayout>
+
+</LinearLayout>

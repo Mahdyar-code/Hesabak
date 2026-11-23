@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layoutDirection="rtl"
+    android:background="@color/bg"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="تمام تراکنش‌ها"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="15dp"/>
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="جست‌وجوی تراکنش..."
+        android:singleLine="true"
+        android:padding="12dp"
+        android:textSize="15sp"
+        android:textColor="@color/text_primary"
+        android:textColorHint="@color/text_secondary"
+        android:background="@drawable/dashboard_card_bg"
+        android:layout_marginBottom="12dp"/>
+
+    <!-- Category and Time Filters -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Spinner
+            android:id="@+id/spFilterCategory"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@drawable/dashboard_card_bg"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="1dp"/>
+
+        <Spinner
+            android:id="@+id/spFilterDate"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:background="@drawable/dashboard_card_bg"/>
+    </LinearLayout>
+
+    <!-- Transaction Type -->
+    <Spinner
+        android:id="@+id/spFilterType"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/dashboard_card_bg"
+        android:layout_marginTop="10dp"/>
+
+    <!-- Custom Date Range -->
+    <LinearLayout
+        android:id="@+id/customDateContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/btnStartDate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="از تاریخ"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/surface_alt"/>
+
+        <Space
+            android:layout_width="10dp"
+            android:layout_height="1dp"/>
+
+        <Button
+            android:id="@+id/btnEndDate"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="تا تاریخ"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/surface_alt"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="12dp">
+
+        <TextView
+            android:id="@+id/tvTransactionCount"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0 تراکنش"
+            android:textColor="@color/text_secondary"
+            android:textSize="14sp"/>
+
+        <Button
+            android:id="@+id/btnClearFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="پاک‌کردن فیلترها"
+            android:textSize="12sp"
+            android:textColor="@color/primary"
+            android:backgroundTint="@color/surface"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="12dp"
+        android:scrollbars="none"/>
+
+    <TextView
+        android:id="@+id/tvEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="هیچ تراکنشی پیدا نشد."
+        android:gravity="center"
+        android:textSize="15sp"
+        android:textColor="@color/text_secondary"
+        android:padding="15dp"
+        android:visibility="gone"/>
+
+</LinearLayout>

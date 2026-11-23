@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="bg">#0B1020</color>
+    <color name="surface">#151E31</color>
+    <color name="surface_alt">#202B43</color>
+    <color name="primary">#8B7CFF</color>
+    <color name="income">#35D39A</color>
+    <color name="expense">#FF6B7A</color>
+    <color name="text_primary">#F5F7FF</color>
+    <color name="text_secondary">#9AA6BD</color>
+    <color name="border">#283650</color>
+</resources>
