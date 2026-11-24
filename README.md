@@ -1,132 +1,132 @@
-# 💜 Hesabak – Personal Finance Manager
+# 💜 حسابک – مدیریت مالی شخصی
 
-**Hesabak (حسابک)** is a modern, offline Android application designed to help users manage their personal finances efficiently. It provides a simple and user-friendly interface for tracking income and expenses.
+**حسابک (Hesabak)** یک برنامهٔ مدرن و آفلاین اندروید است که برای مدیریت آسان امور مالی شخصی طراحی شده است. این برنامه رابطی ساده و کاربرپسند برای ثبت و پیگیری درآمدها و هزینه‌ها در اختیار شما قرار می‌دهد.
 
-Built with **Java, XML, and SQLite**, Hesabak offers a clean, dark-themed interface with full support for the Dari language.
+حسابک با **جاوا، XML و SQLite** ساخته شده و دارای رابطی تمیز و تیره، همراه با پشتیبانی کامل از زبان دری است.
 
-## ✨ Features
+## ✨ امکانات
 
-### 🔐 PIN Authentication
-- Secure four-digit PIN authentication.
-- PIN hashing using PBKDF2 with a random salt.
-- Offline authentication without internet access.
+### 🔐 احراز هویت با پین
+- احراز هویت امن با پین چهاررقمی.
+- ذخیره‌سازی هش پین با استفاده از PBKDF2 و نمک تصادفی.
+- احراز هویت آفلاین و بدون نیاز به اینترنت.
 
-### 📊 Financial Dashboard
-- View total account balance.
-- Track monthly income and expenses.
-- Calculate monthly remaining balance.
-- View recent financial transactions.
-- Quick access to transaction management and financial reports.
+### 📊 داشبورد مالی
+- مشاهدهٔ موجودی کلی حساب.
+- پیگیری درآمد و هزینه‌های ماهانه.
+- محاسبهٔ باقی‌ماندهٔ ماهانه.
+- مشاهدهٔ تازه‌ترین تراکنش‌های مالی.
+- دسترسی سریع به مدیریت تراکنش‌ها و گزارش‌های مالی.
 
-### 💸 Transaction Management
-- Add new income and expense transactions.
-- Edit existing transactions.
-- Delete transactions with confirmation.
-- View all transaction history.
-- Organize transactions by predefined categories.
-- Add transaction dates and optional notes.
+### 💸 مدیریت تراکنش‌ها
+- افزودن تراکنش‌های جدید درآمد یا هزینه.
+- ویرایش تراکنش‌های موجود.
+- حذف تراکنش‌ها با تأیید کاربر.
+- مشاهدهٔ تمام تاریخچهٔ تراکنش‌ها.
+- دسته‌بندی تراکنش‌ها با دسته‌های از پیش تعیین‌شده.
+- افزودن تاریخ تراکنش و یادداشت اختیاری.
 
-### 🔎 Search and Filters
-- Search transactions by title or notes.
-- Filter transactions by category.
-- Filter by income or expense.
-- Filter by date:
-  - Today
-  - Last 7 days
-  - This month
-  - Last month
-  - This year
-  - All time
-  - Custom date range
+### 🔎 جستجو و فیلتر
+- جستجوی تراکنش‌ها بر اساس عنوان یا یادداشت.
+- فیلتر بر اساس دسته‌بندی.
+- فیلتر بر اساس نوع تراکنش: درآمد یا هزینه.
+- فیلتر بر اساس بازهٔ زمانی:
+  - امروز
+  - هفت روز گذشته
+  - این ماه
+  - ماه گذشته
+  - امسال
+  - تمام زمان‌ها
+  - بازهٔ زمانی دلخواه
 
-### 📈 Financial Reports
-- View income and expense summaries.
-- Compare income and expenses using charts.
-- Analyze spending by category.
-- View spending amounts and percentages.
-- Filter reports by time period.
+### 📈 گزارش‌های مالی
+- مشاهدهٔ خلاصهٔ درآمدها و هزینه‌ها.
+- مقایسهٔ درآمد و هزینه با نمودارها.
+- تحلیل هزینه‌ها بر اساس دسته‌بندی.
+- مشاهدهٔ مبلغ و درصد هزینه‌ها.
+- فیلتر گزارش‌ها بر اساس بازهٔ زمانی.
 
-### 🎨 User Interface
-- Modern dark-mode design.
-- Purple-accented dashboard.
-- Fully right-to-left (RTL) interface.
-- Dari-language labels.
-- Responsive and user-friendly layouts.
+### 🎨 رابط کاربری
+- طراحی مدرن با حالت تیره.
+- داشبورد با رنگ‌های بنفش.
+- رابط کاملاً راست‌به‌چپ (RTL).
+- برچسب‌ها و متن‌ها به زبان دری.
+- چیدمان واکنش‌گرا و آسان برای استفاده.
 
-## 🛠️ Technologies Used
+## 🛠️ تکنولوژی‌های استفاده‌شده
 
-| Technology | Purpose |
+| تکنولوژی | کاربرد |
 |---|---|
-| Java | Application logic |
-| XML | User interface |
-| SQLite | Local database |
-| SQLiteOpenHelper | Database management |
-| RecyclerView | Transaction lists |
-| Android Studio | Development environment |
-| Gradle | Build automation |
+| Java | منطق برنامه |
+| XML | رابط کاربری |
+| SQLite | پایگاه دادهٔ محلی |
+| SQLiteOpenHelper | مدیریت پایگاه داده |
+| RecyclerView | نمایش فهرست تراکنش‌ها |
+| Android Studio | محیط توسعه |
+| Gradle | سامانهٔ ساخت پروژه |
 
-## 🗄️ Database Structure
+## 🗄️ ساختار پایگاه داده
 
-Hesabak uses a local SQLite database named `Hesabak.db`.
+حسابک از پایگاه دادهٔ محلی SQLite با نام `Hesabak.db` استفاده می‌کند.
 
-**Main tables:**
+**جدول‌های اصلی:**
 
-- `settings` – Stores hashed PIN and application settings.
-- `transactions` – Stores income and expense records.
-- `budgets` – Reserved for potential budget management functionality.
+- `settings` – ذخیرهٔ پین هش‌شده و تنظیمات برنامه.
+- `transactions` – ذخیرهٔ رکوردهای درآمد و هزینه.
+- `budgets` – رزرو شده برای امکانات آیندهٔ مدیریت بودجه.
 
-## 📱 Installation
+## 📱 نصب و راه‌اندازی
 
-1. Clone the repository:
+1. مخزن را کلون کنید:
 
    ```bash
    git clone https://github.com/YOUR_USERNAME/Hesabak.git
    ```
 
-2. Open the project in Android Studio.
-3. Allow Gradle to synchronize.
-4. Connect an Android device or start an emulator.
-5. Run the application.
+2. پروژه را در Android Studio باز کنید.
+3. اجازه دهید Gradle همگام‌سازی شود.
+4. یک دستگاه اندروید وصل کنید یا Emulator را اجرا کنید.
+5. برنامه را اجرا کنید.
 
-**Download the [Hesabak 1.0 APK](https://github.com/Mahdyar-code/Hesabak/raw/refs/heads/master/apk_file/Hesabak.apk).**
+**برای دانلود مستقیم، [فایل APK نسخهٔ ۱.۰ حسابک](https://github.com/Mahdyar-code/Hesabak/raw/refs/heads/master/apk_file/Hesabak.apk) را بگیرید.**
 
-Alternatively, install the APK from the [latest release](https://github.com/Mahdyar-code/Hesabak/releases/latest).
+همچنین می‌توانید APK را از [آخرین انتشار](https://github.com/Mahdyar-code/Hesabak/releases/latest) نصب کنید.
 
-## 🔒 Privacy and Security
+## 🔒 حریم خصوصی و امنیت
 
-Hesabak works completely offline. Financial information is stored locally on the user's device using SQLite.
+حسابک کاملاً آفلاین کار می‌کند و اطلاعات مالی به‌طور محلی در SQLite دستگاه شما ذخیره می‌شود.
 
-- No internet connection required.
-- No external server or cloud database.
-- No user registration required.
-- PIN verification uses a stored hash rather than plaintext.
+- نیاز به اتصال اینترنت ندارد.
+- به سرور یا پایگاه دادهٔ ابری متصل نیست.
+- نیازی به ثبت‌نام کاربر ندارد.
+- برای تأیید پین از هش ذخیره‌شده استفاده می‌کند، نه متن آشکار آن.
 
-**Note:** Device data removal or application uninstallation may permanently delete locally stored financial records.
+**توجه:** حذف داده‌های دستگاه یا حذف برنامه می‌تواند اطلاعات مالی ذخیره‌شده را برای همیشه پاک کند.
 
-## 🚀 Future Improvements
+## 🚀 امکانات آینده
 
-- PIN recovery functionality.
-- Advanced financial visualization.
-- Data backup and restoration.
-- Export financial reports to PDF or Excel.
-- Additional customization options.
+- امکان بازیابی پین.
+- تجسم پیشرفتهٔ وضعیت مالی.
+- پشتیبان‌گیری و بازیابی داده‌ها.
+- خروجی گزارش‌های مالی به PDF یا Excel.
+- گزینه‌های بیشتر برای سفارشی‌سازی.
 
-## 👨‍💻 Developer
+## 👨‍💻 توسعه‌دهنده
 
-Developed by **Mohammad Mosa Mahdyar**
+توسعه داده‌شده توسط **محمد موسی مه‌دیار**
 
-**Project:** Hesabak – Personal Finance Manager
+**پروژه:** حسابک – مدیریت مالی شخصی
 
-**Platform:** Android
+**پلتفرم:** اندروید
 
-**Language:** Java
+**زبان:** جاوا
 
-## 📄 License
+## 📄 مجوز
 
-This project was developed for educational and personal learning purposes. No open-source license has been specified yet.
+این پروژه برای اهداف آموزشی و یادگیری شخصی ساخته شده است. هنوز مجوز متن‌باز مشخص نشده است.
 
 ---
 
-**Made with ❤️ using Java, XML, and SQLite.**
+**ساخته‌شده با ❤️ با استفاده از جاوا، XML و SQLite.**
 
-*Hesabak – Manage your money, understand your spending.*
+*حسابک – پول خود را مدیریت کنید و شیوهٔ خرج کردن آن را بهتر بفهمید.*
