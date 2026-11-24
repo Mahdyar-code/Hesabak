@@ -1,6 +1,6 @@
 # 💜 Hesabak – Personal Finance Manager
 
-**Hesabak (حسابک)** is a modern, offline Android application designed to help users manage their personal finances efficiently. It provides a simple and user-friendly interface for tracking income, recording expenses, viewing financial transactions, and analyzing spending habits.
+**Hesabak (حسابک)** is a modern, offline Android application designed to help users manage their personal finances efficiently. It provides a simple and user-friendly interface for tracking income, expenses, and financial goals.
 
 Built with **Java, XML, and SQLite**, Hesabak offers a clean, dark-themed interface with full support for the Dari language.
 
@@ -88,7 +88,7 @@ Hesabak uses a local SQLite database named `Hesabak.db`.
 4. Connect an Android device or start an emulator.
 5. Run the application.
 
-Alternatively, install a provided APK release on a compatible Android device.
+Alternatively, install the APK from the [latest release](https://github.com/Mahdyar-code/Hesabak/releases/latest).
 
 You can see the APK in apk_file folder
 
